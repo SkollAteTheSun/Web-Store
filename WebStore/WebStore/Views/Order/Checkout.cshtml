@@ -1,0 +1,52 @@
+﻿@model Order
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="row">
+    <h3>Ordering</h3>
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="name"></label>
+            <div class="col-md-5">
+                <input asp-for="name" class="for-control">
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+        </div>
+    </form>
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="surName"></label>
+            <div class="col-md-5">
+                <input asp-for="surName" class="for-control">
+                <span asp-validation-for="surName" class="text-danger"></span>
+            </div>
+        </div>
+    </form>
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="adress"></label>
+            <div class="col-md-5">
+                <input asp-for="adress" class="for-control">
+                <span asp-validation-for="adress" class="text-danger"></span>
+            </div>
+        </div>
+    </form>
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="phone"></label>
+            <div class="col-md-5">
+                <input asp-for="phone" class="for-control">
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+        </div>
+    </form>
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="email"></label>
+            <div class="col-md-5">
+                <input asp-for="email" class="for-control">
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn bnt-success" type="submit" value="Complete to order"
+    </form>
+</div>

@@ -1,0 +1,10 @@
+﻿@using System.Globalization;
+@model WebStore.Data.Model.Car
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="col-lg-4">
+    <img class="img-thumbnail" scr="@Model.img" alt="@Model.name" />
+    <h2>@Model.name</h2>
+    <p>@Model.shortDesc</p>
+    <p>Price: @Model.price.ToString("C", new CultureInfo("fr_FR"))</p>
+    <p><a class="btn btn-warning" asp-controller="WebStoreCart" asp-action="addToCart" asp-route-id="@Model.id">Add to cart</a></p>
+</div>
